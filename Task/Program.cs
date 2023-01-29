@@ -1,9 +1,17 @@
 ﻿// Написать программу, которая из имеющегося массива строк формирует массив из строк, длина которых меньше либо равна 3 символа. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. При решение не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами
 //
 
-string[] M;
-Console.Writeline("Введите строки");
-string str = Console.Realine();
-M = str.Split('');
-var 
+string Prompt(string message) {
+    System.Console.Write(message);
+    string input = Console.ReadLine();
+    return input;
+}
+void ShowArray(string[] array) {
+    for (int i = 0; i < array.Length; i++) {
+        System.Console.Write($"{array[i]}  ");
+    }
+    System.Console.WriteLine();
+}
+
+
 
